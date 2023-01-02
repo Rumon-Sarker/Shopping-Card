@@ -5,7 +5,7 @@ function updateProductNumber(product, price, isIncreasing) {
     if (isIncreasing == true) {
         productNumber = parseInt(productNumber) + 1;
     }
-    else if (productNumber > 1) {
+    else if (productNumber > 0) {
         productNumber = parseInt(productNumber) - 1;
     }
     productInput.value = productNumber;
